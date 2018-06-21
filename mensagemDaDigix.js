@@ -1,11 +1,12 @@
 export class MensagemDaDigix {
   constructor() {
     this.chave = 'mensagemDaDigix';
+    this.mensagemDoSuporte = 'https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/master/mensagem-suporte.png';
     this.caminhoDaImagem = '';
   }
 
-  iniciarMensagemDaDigix() {
-    fetch('https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/master/mensagem-suporte.png')
+  iniciar() {
+    fetch(this.mensagemDoSuporte)
       .then(resposta => {
         if (resposta.ok) {
           resposta.blob().then(arquivo => {
