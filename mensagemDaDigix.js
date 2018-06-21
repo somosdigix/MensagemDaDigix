@@ -5,7 +5,7 @@ export class MensagemDaDigix {
   }
 
   iniciarMensagemDaDigix() {
-    fetch('https://raw.githubusercontent.com/RafaelFTeixeira/MensagemDaDigix/master/mensagem-suporte.png')
+    fetch('https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/master/mensagem-suporte.png')
       .then(resposta => {
         if (resposta.ok) {
           resposta.blob().then(arquivo => {
