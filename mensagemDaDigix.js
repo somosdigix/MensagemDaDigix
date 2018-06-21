@@ -22,7 +22,7 @@ class MensagemDaDigix {
     let exibiuMensagem = this.obterLocalStorage();
     if (!exibiuMensagem.value) {
       this.construirOsElementos();
-      this.inserirLocalStorage(true, 24);
+      this.inserirLocalStorage();
     }
   }
 
@@ -102,11 +102,12 @@ class MensagemDaDigix {
     }
   }
 
-  inserirLocalStorage(valor, horas) {
-    let expirarEm = (new Date().getTime()) + (3600000 * horas);
+  inserirLocalStorage() {
+    let horas = 3600000 * 24;
+    let expirarEm = (new Date().getTime()) + horas;
 
     localStorage.setItem(this.chave, JSON.stringify({
-      'value': valor,
+      'value': true,
       'expires': expirarEm
     }));
   }
