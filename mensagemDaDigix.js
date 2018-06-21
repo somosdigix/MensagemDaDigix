@@ -1,7 +1,7 @@
 class MensagemDaDigix {
   constructor() {
     this.chave = 'mensagemDaDigix';
-    this.mensagemDoSuporte = 'https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/master/mensagem-suporte.png';
+    this.mensagemDoSuporte = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
     this.caminhoDaImagem = '';
   }
 
