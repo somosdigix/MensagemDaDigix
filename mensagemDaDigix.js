@@ -1,4 +1,4 @@
-export class MensagemDaDigix {
+class MensagemDaDigix {
   constructor() {
     this.chave = 'mensagemDaDigix';
     this.mensagemDoSuporte = 'https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/master/mensagem-suporte.png';
