@@ -1,4 +1,4 @@
-## Insira estse scripts no HTML:
+## Insira estes scripts no HTML:
 
 `<script src="https://somosdigix.github.io/MensagemDaDigix/mensagemDaDigix.js"></script>`
 
