@@ -1,8 +1,10 @@
 class MensagemDaDigix {
   constructor() {
-    this.chave = 'mensagemDaDigix';
-    this.mensagemDoSuporte = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
     this.caminhoDaImagem = '';
+    this.chave = 'mensagemDaDigix';
+    this.classDosElementos = 'mensagemDaDigix';
+    this.mensagemDoSuporte = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
+    document.onkeydown = (evento) => this.fecharMensagemComEsc(evento);
   }
 
   iniciar() {
@@ -40,7 +42,7 @@ class MensagemDaDigix {
     let botao = document.createElement('button');
     botao.textContent = 'X';
     botao.title = 'Fechar';
-    botao.classList.add('mensagemDaDigix');
+    botao.classList.add(this.classDosElementos);
     botao.onclick = () => this.fecharMensagemDaDigix();
 
     let estilo = botao.style;
@@ -48,23 +50,26 @@ class MensagemDaDigix {
     estilo.backgroundColor = 'whitesmoke';
     estilo.position = 'fixed';
     estilo.cursor = 'pointer';
-    estilo.top = '0';
-    estilo.right = '0';
+    estilo.top = '50%';
+    estilo.right = '50%';
+    estilo.transform = 'translate(390px, -246px)';
     estilo.width = '30px';
     estilo.height = '30px';
-    estilo.border = '1px solid grey';
+    estilo.border = '0';
     estilo.borderRadius = '50%';
+    estilo.fontWeight = '900';
+    estilo.textAlign = 'center'
+    estilo.color = '#2b056b';
 
     return botao;
   }
 
   obterElementoDaImagem() {
     let imagem = document.createElement('img');
-    imagem.classList.add('mensagemDaDigix');
+    imagem.classList.add(this.classDosElementos);
     imagem.src = this.caminhoDaImagem;
     imagem.alt = 'Mensagem da Digix';
-    imagem.width = '820';
-    imagem.height = '520';
+    imagem.width = '800';
     imagem.onerror = () => this.fecharMensagemDaDigix();
 
     let estilo = imagem.style;
@@ -72,18 +77,19 @@ class MensagemDaDigix {
     estilo.position = 'fixed';
     estilo.top = '50%';
     estilo.left = '50%';
-    estilo.marginTop = `-${imagem.height / 2}px`;
-    estilo.marginLeft = `-${imagem.width / 2}px`;
+    estilo.width = '820px';
+    estilo.transform = 'translate(-50%, -50%)';
 
     return imagem;
   }
 
   obterElementoDaTelaDeBloqueio() {
     let telaDeBloqueio = document.createElement('div');
-    telaDeBloqueio.classList.add('mensagemDaDigix');
+    telaDeBloqueio.classList.add(this.classDosElementos);
+    telaDeBloqueio.onclick = () => this.fecharMensagemDaDigix();
 
     let estilo = telaDeBloqueio.style;
-    estilo.backgroundColor = 'gray';
+    estilo.backgroundColor = 'black';
     estilo.position = 'fixed';
     estilo.width = '100%';
     estilo.height = '100%';
@@ -93,13 +99,6 @@ class MensagemDaDigix {
     estilo.opacity = 0.6;
 
     return telaDeBloqueio;
-  }
-
-  fecharMensagemDaDigix() {
-    const elementos = document.getElementsByClassName('mensagemDaDigix');
-    while (elementos.length > 0) {
-      elementos[0].remove();
-    }
   }
 
   inserirLocalStorage() {
@@ -130,6 +129,21 @@ class MensagemDaDigix {
       localStorage.removeItem(this.chave);
     }
   }
+
+  fecharMensagemDaDigix() {
+    const elementos = document.getElementsByClassName(this.classDosElementos);
+    while (elementos.length > 0) {
+      elementos[0].remove();
+    }
+  }
+
+  fecharMensagemComEsc(evento) {
+    evento = evento || window.event;
+    let esc = 27;
+    if (evento.keyCode === esc) {
+      this.fecharMensagemDaDigix();
+    }
+  }
 }
 
-new MensagemDaDigix().iniciar()
+new MensagemDaDigix().iniciar();
