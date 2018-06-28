@@ -2,6 +2,6 @@
 
 `<script src="https://somosdigix.github.io/MensagemDaDigix/mensagemDaDigix.js"></script>`
 
-## Nome da imagem para upload:
-
-`mensagem-suporte.png`
+## Para publicar uma mensagem:
+1 • Subir uma imagem com nome `mensagem-suporte.png` neste github
+2 • Inserir `new MensagemDaDigix().iniciar();` no final do código mensagemDaDigix.js
