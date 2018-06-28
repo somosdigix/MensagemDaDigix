@@ -146,5 +146,4 @@ class MensagemDaDigix {
   }
 }
 
-new MensagemDaDigix().iniciar();
  
