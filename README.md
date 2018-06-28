@@ -4,4 +4,5 @@
 
 ## Para publicar uma mensagem:
 1 • Subir uma imagem com nome `mensagem-suporte.png` neste github
+
 2 • Inserir `new MensagemDaDigix().iniciar();` no final do código mensagemDaDigix.js
