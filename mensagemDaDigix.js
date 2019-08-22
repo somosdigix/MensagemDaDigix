@@ -51,7 +51,7 @@ class MensagemDaDigix {
     estilo.cursor = 'pointer'
     estilo.top = '50%';
     estilo.left = '50%';
-    estilo.width = '720px';
+    estilo.width = '712px';
     estilo.maxWidth = '100%'
     estilo.transform = 'translate(-50%, -50%)';
 
