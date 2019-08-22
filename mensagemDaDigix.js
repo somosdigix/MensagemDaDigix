@@ -35,7 +35,7 @@ class MensagemDaDigix {
     body.appendChild(telaDeBloqueio);
     body.appendChild(imagem);
   }
-  
+
   obterElementoDaImagem() {
     let imagem = document.createElement('img');
     imagem.classList.add(this.classDosElementos);
