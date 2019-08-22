@@ -32,52 +32,27 @@ class MensagemDaDigix {
     let body = document.querySelector('body');
     let telaDeBloqueio = this.obterElementoDaTelaDeBloqueio();
     let imagem = this.obterElementoDaImagem();
-    let botaoDeFechar = this.obterElementoDoBotaoDeFechar();
-    body.appendChild(botaoDeFechar);
     body.appendChild(telaDeBloqueio);
     body.appendChild(imagem);
   }
-
-  obterElementoDoBotaoDeFechar() {
-    let botao = document.createElement('button');
-    botao.textContent = 'X';
-    botao.title = 'Fechar';
-    botao.classList.add(this.classDosElementos);
-    botao.onclick = () => this.fecharMensagemDaDigix();
-
-    let estilo = botao.style;
-    estilo.zIndex = 9999;
-    estilo.backgroundColor = 'whitesmoke';
-    estilo.position = 'fixed';
-    estilo.cursor = 'pointer';
-    estilo.top = '50%';
-    estilo.right = '50%';
-    estilo.transform = 'translate(390px, -246px)';
-    estilo.width = '30px';
-    estilo.height = '30px';
-    estilo.border = '0';
-    estilo.borderRadius = '50%';
-    estilo.fontWeight = '900';
-    estilo.textAlign = 'center'
-    estilo.color = '#2b056b';
-
-    return botao;
-  }
-
+  
   obterElementoDaImagem() {
     let imagem = document.createElement('img');
     imagem.classList.add(this.classDosElementos);
     imagem.src = this.caminhoDaImagem;
     imagem.alt = 'Mensagem da Digix';
-    imagem.width = '800';
+    imagem.width = '640';
+    imagem.onclick = () => this.fecharMensagemDaDigix();
     imagem.onerror = () => this.fecharMensagemDaDigix();
 
     let estilo = imagem.style;
     estilo.zIndex = 9998;
     estilo.position = 'fixed';
+    estilo.cursor = 'pointer'
     estilo.top = '50%';
     estilo.left = '50%';
-    estilo.width = '820px';
+    estilo.width = '720px';
+    estilo.maxWidth = '100%'
     estilo.transform = 'translate(-50%, -50%)';
 
     return imagem;
