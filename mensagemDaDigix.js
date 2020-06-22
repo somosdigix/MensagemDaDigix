@@ -121,4 +121,4 @@ class MensagemDaDigix {
   }
 }
 
-new MensagemDaDigix().iniciar();
+// new MensagemDaDigix().iniciar();
