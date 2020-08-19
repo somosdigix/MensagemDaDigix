@@ -1,14 +1,14 @@
 class MensagemDaDigix {
-  constructor() {
-    this.caminhoDaImagem = '';
+  constructor(caminhoDaImagem, sistemas = []) {
     this.chave = 'mensagemDaDigix';
+    this.sistemas = sistemas;
+    this.caminhoDaImagem = caminhoDaImagem;
     this.classDosElementos = 'mensagemDaDigix';
-    this.mensagemDoSuporte = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
     document.onkeydown = (evento) => this.fecharMensagemComEsc(evento);
   }
 
   iniciar() {
-    fetch(this.mensagemDoSuporte)
+    fetch(this.caminhoDaImagem)
       .then(resposta => {
         if (resposta.ok) {
           resposta.blob().then(arquivo => {
@@ -22,7 +22,20 @@ class MensagemDaDigix {
   executar() {
     this.removerStorageExpirado();
     let exibiuMensagem = this.obterLocalStorage();
+    
     if (!exibiuMensagem.value) {
+      const sistemas = this.sistemas;
+
+      if (sistemas.length > 0) {
+        sistemas.forEach(sistema => {
+          if(sistema === window.location.host) {
+            this.construirOsElementos();
+            this.inserirLocalStorage();
+          }
+        });
+        return;
+      } 
+        
       this.construirOsElementos();
       this.inserirLocalStorage();
     }
@@ -120,3 +133,16 @@ class MensagemDaDigix {
     }
   }
 }
+
+const sistema = {
+  cheffescolar: 'cheffescolar.sed.ms.gov.br',
+  habix: 'habix.agehab.ms.gov.br',
+  humani: 'humani.ms.gov.br',
+  nexxus: 'nexxus.sed.ms.gov.br',
+  papelzero: 'papelzero.sed.ms.gov.br',
+}
+
+const caminhoDaImagem = 'https://github.com/gabrielmedina/MensagemDaDigix/mensagem-suporte.png';
+
+//new MensagemDaDigix(caminhoDaImagem).iniciar();
+//new MensagemDaDigix(caminhoDaImagem, [sistema.habix, sistema.papelzero]).iniciar();
