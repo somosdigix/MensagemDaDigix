@@ -142,6 +142,6 @@ const sistema = {
   papelzero: 'papelzero.sed.ms.gov.br',
 }
 
-const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-dia-da-habitacao.png';
+const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
 
 new MensagemDaDigix(caminhoDaImagem, [sistema.habix]).iniciar();
