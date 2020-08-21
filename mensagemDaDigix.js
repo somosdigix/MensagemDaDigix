@@ -144,4 +144,4 @@ const sistema = {
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
 
-// new MensagemDaDigix(caminhoDaImagem, [sistema.habix]).iniciar();
+new MensagemDaDigix(caminhoDaImagem, [sistema.habix]).iniciar();
