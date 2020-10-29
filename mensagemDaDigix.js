@@ -142,6 +142,6 @@ const sistema = {
   papelzero: 'papelzero.sed.ms.gov.br',
 }
 
-const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
-new MensagemDaDigix(caminhoDaImagem).iniciar();
+// const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
+// new MensagemDaDigix(caminhoDaImagem).iniciar();
 // new MensagemDaDigix(caminhoDaImagem, [sistema.habix]).iniciar();
