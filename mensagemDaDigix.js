@@ -136,15 +136,14 @@ class MensagemDaDigix {
 
 const sistema = {
   cheffescolar: 'cheffescolar.sed.ms.gov.br',
-  habix: 'hom.habix.agehab.ms.gov.br',
+  habix: 'habix.agehab.ms.gov.br',
   humani: 'humani.ms.gov.br',
   nexxus: 'nexxus.sed.ms.gov.br',
   papelzero: 'papelzero.sed.ms.gov.br'
 }
 
 const sistemasComMensagemHabilitada = {
-  cheffescolar: 'cheffescolar.sed.ms.gov.br',
-  habix: 'hom.habix.agehab.ms.gov.br',
+  cheffescolar: 'cheffescolar.sed.ms.gov.br'
 }
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
