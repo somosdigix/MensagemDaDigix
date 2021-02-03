@@ -139,14 +139,11 @@ const sistema = {
   habix: 'hom.habix.agehab.ms.gov.br',
   humani: 'humani.ms.gov.br',
   nexxus: 'nexxus.sed.ms.gov.br',
-  papelzero: 'papelzero.sed.ms.gov.br',
-  localhost: 'localhost'
+  papelzero: 'papelzero.sed.ms.gov.br'
 }
 
 const sistemasComMensagemHabilitada = {
-  cheffescolar: 'cheffescolar.sed.ms.gov.br',
-  habix: 'hom.habix.agehab.ms.gov.br',
-  localhost: 'localhost'
+  cheffescolar: 'cheffescolar.sed.ms.gov.br'
 }
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
