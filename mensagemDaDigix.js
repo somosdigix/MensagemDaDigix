@@ -140,8 +140,9 @@ const sistema = {
   humani: 'humani.ms.gov.br',
   nexxus: 'nexxus.sed.ms.gov.br',
   papelzero: 'papelzero.sed.ms.gov.br',
+  localhost: 'localhost'
 }
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
 // new MensagemDaDigix(caminhoDaImagem).iniciar();
-new MensagemDaDigix(caminhoDaImagem, [sistema.cheffescolar, sistema.habix]).iniciar();
+new MensagemDaDigix(caminhoDaImagem, [sistema.cheffescolar, sistema.habix, sistema.localhost]).iniciar();
