@@ -142,10 +142,10 @@ const sistema = {
   papelzero: 'papelzero.sed.ms.gov.br'
 }
 
-const sistemasComMensagemHabilitada = {
-  cheffescolar: 'cheffescolar.sed.ms.gov.br'
-}
+const sistemasComMensagemHabilitada = [
+  sistema.cheffescolar
+]
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-cheff-edital.png';
 
-// new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
