@@ -146,6 +146,6 @@ const sistemasComMensagemHabilitada = {
   cheffescolar: 'cheffescolar.sed.ms.gov.br'
 }
 
-const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
+const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-cheff-edital.png';
 
-// new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
