@@ -148,4 +148,4 @@ const sistemasComMensagemHabilitada = {
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-cheff-edital.png';
 
-new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+// new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
