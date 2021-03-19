@@ -143,9 +143,12 @@ const sistema = {
 }
 
 const sistemasComMensagemHabilitada = [
-  sistema.cheffescolar
+  sistema.cheffescolar,
+  sistema.habix,
+  sistema.humani,
+  sistema.nexxus,
+  sistema.papelzero
 ]
 
-const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-cheff-edital.png';
-
-// new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
+new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
