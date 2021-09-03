@@ -64,7 +64,7 @@ class MensagemDaDigix {
     estilo.cursor = 'pointer'
     estilo.top = '50%';
     estilo.left = '50%';
-    estilo.width = '712px';
+    estilo.width = '640px';
     estilo.maxWidth = '100%'
     estilo.transform = 'translate(-50%, -50%)';
 
@@ -151,4 +151,4 @@ const sistemasComMensagemHabilitada = [
 ]
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
-// new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
