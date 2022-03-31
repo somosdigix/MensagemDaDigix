@@ -140,13 +140,11 @@ const sistema = {
    humani: 'humani.ms.gov.br',
    nexxus: 'nexxus.sed.ms.gov.br',
    papelzero: 'papelzero.sed.ms.gov.br', 
-   papelzerosanesul: 'papelzero.sanesul.ms.gov.br',
    papelzeroagehab: 'papelzero.agehab.ms.gov.br'
 }
 
 const sistemasComMensagemHabilitada = [
   sistema.papelzero,
-  sistema.papelzerosanesul,
   sistema.papelzeroagehab
 ]
 
