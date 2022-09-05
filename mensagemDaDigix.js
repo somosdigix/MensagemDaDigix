@@ -141,11 +141,12 @@ const sistema = {
    nexxus: 'nexxus.sed.ms.gov.br',
    papelzero: 'papelzero.sed.ms.gov.br', 
    papelzeroagehab: 'papelzero.agehab.ms.gov.br',
+   papelzerosanesul: 'papelzero.sanesul.ms.gov.br',
    papelzerosefaz: 'papelzero.sefaz.ms.gov.br'
 }
 
 const sistemasComMensagemHabilitada = [
-  sistema.cheffescolar
+  sistema.papelzerosanesul
 ]
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
