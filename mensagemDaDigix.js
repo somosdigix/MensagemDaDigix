@@ -147,7 +147,10 @@ const sistema = {
 }
 
 const sistemasComMensagemHabilitada = [
-  sistema.papelzero
+  sistema.papelzero,
+  sistema.papelzeroagehab,
+  sistema.papelzerosefaz,
+  sistema.papelzeroprocon
 ]
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
