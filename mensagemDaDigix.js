@@ -142,12 +142,13 @@ const sistema = {
    papelzero: 'papelzero.sed.ms.gov.br', 
    papelzeroagehab: 'papelzero.agehab.ms.gov.br',
    papelzerosanesul: 'papelzero.sanesul.ms.gov.br',
-   papelzerosefaz: 'papelzero.sefaz.ms.gov.br'
+   papelzerosefaz: 'papelzero.sefaz.ms.gov.br',
+   papelzeroprocon: 'papelzero.procon.ms.gov.br'
 }
 
 const sistemasComMensagemHabilitada = [
-  sistema.nexxus
+  sistema.papelzero
 ]
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
-//new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();//
+new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
