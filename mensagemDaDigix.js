@@ -147,8 +147,13 @@ const sistema = {
 }
 
 const sistemasComMensagemHabilitada = [
+  sistema.cheffescolar,
+  sistema.habix,
+  sistema.humani,
+  sistema.nexxus,
   sistema.papelzero,
   sistema.papelzeroagehab,
+  sistema.papelzerosanesul,
   sistema.papelzerosefaz,
   sistema.papelzeroprocon
 ]
