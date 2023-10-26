@@ -146,7 +146,7 @@ const sistema = {
 }
 
 const sistemasComMensagemHabilitada = [
-  sistema.nexxus
+  sistema.cheffescolar
 ]
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
