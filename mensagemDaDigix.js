@@ -148,7 +148,7 @@ const sistema = {
 
 const sistemasComMensagemHabilitada = [
   sistema.cheffescolarMs,
-  sistema.cheffescolarPiaui,
+  sistema.cheffescolarPiaui
 ]
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
