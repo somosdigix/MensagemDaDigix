@@ -149,7 +149,7 @@ const sistema = {
 const sistemasComMensagemHabilitada = [
   sistema.cheffescolarMs,
   sistema.cheffescolarPiaui,
-  sistema.habix,
+  //sistema.habix,
   sistema.nexxus,
   sistema.papelzero,
   sistema.papelzeroagehab,
