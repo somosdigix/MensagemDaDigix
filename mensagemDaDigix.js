@@ -135,7 +135,7 @@ class MensagemDaDigix {
 }
 
 const sistema = {
-   cheffescolarMsHom: 'hom.cheffescolar.sed.ms.gov.br/cheffescolar/login.xhtml',
+   cheffescolarMsHom: 'hom.cheffescolar.sed.ms.gov.br',
    cheffescolarMs: 'cheffescolar.sed.ms.gov.br',
    cheffescolarPiaui: 'cheffescolar.seduc.pi.gov.br',
    habix: 'habix.agehab.ms.gov.br',
