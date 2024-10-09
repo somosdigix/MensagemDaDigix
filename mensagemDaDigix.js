@@ -152,5 +152,6 @@ const sistemasComMensagemHabilitada = [
 ]
 
 const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/c5wbvuaVVLWzC.webp';
-new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+//new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+new MensagemDaDigix(caminhoDaImagem, [cheffescolarMsHom]).iniciar();
 
