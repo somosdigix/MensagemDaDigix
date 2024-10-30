@@ -1,6 +1,6 @@
 class MensagemDaDigix {
   constructor(caminhoDaImagem, sistemas = []) {
-    this.chave = 'mensagemDaDigix2';
+    this.chave = 'mensagemDaDigix';
     this.sistemas = sistemas;
     this.caminhoDaImagem = caminhoDaImagem;
     this.classDosElementos = 'mensagemDaDigix';
