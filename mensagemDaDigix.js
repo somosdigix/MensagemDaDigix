@@ -150,5 +150,5 @@ const sistemasComMensagemHabilitada = [
   sistema.papelzerosanesul
 ]
 
-const caminhoDaImagem = 'https://somosdigix.github.io/MensagemDaDigix/mensagem-suporte.png';
+const caminhoDaImagem = 'https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/refs/heads/master/mensagem-suporte.png';
 new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
