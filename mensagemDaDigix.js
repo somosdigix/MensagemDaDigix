@@ -136,6 +136,7 @@ class MensagemDaDigix {
 
 const sistema = {
    cheffescolarMs: 'cheffescolar.sed.ms.gov.br',
+   cheffescolarHomMs: 'hom.cheffescolar.sed.ms.gov.br',
    cheffescolarPiaui: 'cheffescolar.seduc.pi.gov.br',
    habix: 'habix.agehab.ms.gov.br',
    nexxus: 'nexxus.sed.ms.gov.br',
@@ -148,6 +149,7 @@ const sistema = {
 
 const sistemasComMensagemHabilitada = [
   sistema.cheffescolarMs,
+  sistema.cheffescolarHomMs,
   sistema.nexxus,
   sistema.papelzero,
   sistema.papelzeroagehab,
