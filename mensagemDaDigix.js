@@ -149,15 +149,15 @@ const sistema = {
 
 const sistemasComMensagemHabilitada = [
   sistema.cheffescolarMs,
-  sistema.cheffescolarHomMs,
+  sistema.cheffescolarPiaui,
+  sistema.habix,
   sistema.nexxus,
   sistema.papelzero,
   sistema.papelzeroagehab,
   sistema.papelzerosanesul,
   sistema.papelzerosefaz,
-  sistema.papelzeroprocon,
-  sistema.cheffescolarMs
+  sistema.papelzeroprocon
 ]
 
 const caminhoDaImagem = 'https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/refs/heads/master/mensagem-suporte.png';
-//new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
