@@ -144,7 +144,11 @@ const sistema = {
    papelzeroagehab: 'papelzero.agehab.ms.gov.br',
    papelzerosanesul: 'papelzero.sanesul.ms.gov.br',
    papelzerosefaz: 'papelzero.sefaz.ms.gov.br',
-   papelzeroprocon: 'papelzero.procon.ms.gov.br'
+   papelzeroprocon: 'papelzero.procon.ms.gov.br',
+   visttaSitecMs: 'vistta.sitec.sed.ms.gov.br',
+   visttaCoavMs: 'vistta.coav.sed.ms.gov.br',
+   visttaCogesMs: 'vistta.sed.ms.gov.br',
+   saiemsSedMs: 'saiems.sed.ms.gov.br'
 }
 
 const sistemasComMensagemHabilitada = [
@@ -156,7 +160,11 @@ const sistemasComMensagemHabilitada = [
   sistema.papelzeroagehab,
   sistema.papelzerosanesul,
   sistema.papelzerosefaz,
-  sistema.papelzeroprocon
+  sistema.papelzeroprocon,
+  sistema.visttaCogesMs,
+  sistema.visttaSitecMs,
+  sistema.visttaCoavMs,
+  sistema.saiemsSedMs
 ]
 
 const caminhoDaImagem = 'https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/refs/heads/master/mensagem-suporte.png';
