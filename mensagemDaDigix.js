@@ -152,20 +152,20 @@ const sistema = {
 }
 
 const sistemasComMensagemHabilitada = [
-  sistema.cheffescolarMs,
-  sistema.cheffescolarPiaui,
-  sistema.habix,
-  sistema.nexxus,
-  sistema.papelzero,
-  sistema.papelzeroagehab,
-  sistema.papelzerosanesul,
-  sistema.papelzerosefaz,
-  sistema.papelzeroprocon,
+  // sistema.cheffescolarMs,
+  // sistema.cheffescolarPiaui,
+  // sistema.habix,
+  // sistema.nexxus,
+  // sistema.papelzero,
+  // sistema.papelzeroagehab,
+  // sistema.papelzerosanesul,
+  // sistema.papelzerosefaz,
+  // sistema.papelzeroprocon,
+  // sistema.saiemsSedMs,
   sistema.visttaCogesMs,
   sistema.visttaSitecMs,
-  sistema.visttaCoavMs,
-  sistema.saiemsSedMs
+  sistema.visttaCoavMs
 ]
 
 const caminhoDaImagem = 'https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/refs/heads/master/mensagem-suporte.png';
-//new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
