@@ -168,4 +168,4 @@ const sistemasComMensagemHabilitada = [
 ]
 
 const caminhoDaImagem = 'https://raw.githubusercontent.com/somosdigix/MensagemDaDigix/refs/heads/master/mensagem-suporte.png';
-//new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
+new MensagemDaDigix(caminhoDaImagem, sistemasComMensagemHabilitada).iniciar();
